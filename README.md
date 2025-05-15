@@ -39,6 +39,7 @@ python app.py
 ```
 
 Run curl command on Terminal or POSTMAN
+```
 --Note check your curl command according to server name 
 ```
 curl -X POST http://127.0.0.1:8501/predict \
