@@ -1,51 +1,46 @@
-📁 Project Structure
-
-├── app.py                    # Web application / inference script
-├── config.py                 # Configuration file for hyperparameters and paths
-├── data_generator.py         # Data loading and batching logic
-├── logger.py                 # Logging setup
-├── train.py                  # Main training script
-├── utils.py                  # Helper utility functions
-├── text_preprocessing.py     # Text cleaning and normalization functions
-├── requirement.txt           # Python dependencies (pip-compatible)
-├── utils/                    # Additional utility modules
-│   └── __pycache__/
-├── models/                   # Saved or trained model files
-├── logs/                     # Training logs
-├── training_script/          # Any additional training-related scripts
-└── .DS_Store                 # System-generated (safe to ignore or remove)
-
-🐍 Environment Setup
-This project requires Python 3.11. It's recommended to use Conda for managing dependencies.
-🔧 Create a Conda Environment
-conda create -n myenv=3.11
-conda activate myenv
-
-📦 Install Dependencies
+1. Clone the Repository
+bash
+Copy
+Edit
+git clone https://github.com/your-username/ml-training-pipeline.git
+cd ml-training-pipeline
+2. Create and Activate Conda Environment
+bash
+Copy
+Edit
+conda create -n ml_pipeline python=3.11
+conda activate ml_pipeline
+3. Install Requirements
+bash
+Copy
+Edit
 pip install -r requirement.txt
-You can optionally create a conda environment YAML file for more portable sharing. Let me know if you want one.
-
-🚀 Getting Started
-git clone https://github.com/yourusername/your-repo-name.git
-cd your-repo-name
-2. Activate Conda Environment
-conda activate myenv
-3. Train the Model
+🚀 Usage
+✅ Training the Model
+bash
+Copy
+Edit
 python train.py
-Model checkpoints will be saved in the models/ directory. Logs are stored in the logs/ folder.
+Models are saved in the models/ directory.
 
-🌐 Run the Web App
+Logs are written to the logs/ directory.
+
+🌐 Running the App
+bash
+Copy
+Edit
 python app.py
+Modify app.py to suit your deployment or API framework (Flask, FastAPI, Gradio, etc.)
+
 ⚙️ Configuration
-Modify config.py to customize model parameters, dataset paths, logging behavior, etc.
+You can customize paths, model parameters, and training settings in:
 
-✨ Utility Modules
-text_preprocessing.py: Handles normalization, cleaning, and tokenization of input text.
-
-data_generator.py: Efficient data loading for training batches.
-
-logger.py: Custom logger setup.
-
-utils.py: Additional utility functions used throughout the project.
-
-
+python
+Copy
+Edit
+# config.py
+BATCH_SIZE = 32
+EPOCHS = 10
+MODEL_SAVE_PATH = "models/"
+...
+📚
