@@ -1,6 +1,6 @@
 
 # Sentiment Analysis Project
-This repository contains an end-to-end Sentiment Analysis API that uses a trained machine
+This repository contains an end-to-end Sentiment Analysis API that uses a  machine
 learning model to classify the sentiment of input text as positive, negative, or neutral. It is built
 using Flask and includes all necessary modules for inference.
 1. Clone the Repository
