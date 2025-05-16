@@ -51,10 +51,10 @@ Output
 ```
 {
 "predicted
-_
+
 sentiment": "Postive"
 ,
 "confidence
 score": 0.8649
-_
+
 }
