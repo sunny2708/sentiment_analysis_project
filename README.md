@@ -42,9 +42,8 @@ Run curl command on Terminal or POSTMAN
 ```
 --Note check your curl command according to server name 
 ```
-curl -X POST http://127.0.0.1:8501/predict \
-     -H "Content-Type: application/json" \
-     -d '{"text": "I really love this product! It works great."}'
+curl -X POST http://127.0.0.1:8501/predict -H "Content-Type: application/json" -d '{"text": "I really love this product! It works great."}'
+
 ```
 
 Output
